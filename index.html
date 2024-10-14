@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Ganesh Arjula | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Include GSAP library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+</head>
+<body class="bg-black text-white">
+    <div id="cursor" class="cursor"></div>
+
+    <nav class="fixed w-full z-50 backdrop-blur-md bg-opacity-70 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#home" class="text-xl font-bold neon-text">SGA</a>
+                </div>
+
+                <!-- Hamburger Menu for Mobile -->
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger" class="block text-gray-300 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#awards" class="nav-link">Awards</a>
+                        <a href="#certifications" class="nav-link">Certifications</a>
+                        <a href="#publications" class="nav-link">Publications</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="section min-h-screen flex items-center justify-center relative overflow-hidden">
+            <div id="hero-visualization" class="absolute inset-0 z-0"></div>
+            <div class="text-center z-10 relative">
+                <h1 id="name" class="text-6xl font-bold mb-4 glitch" data-text="Sri Ganesh Arjula">Sri Ganesh Arjula</h1>
+                <p id="title" class="text-2xl mb-8 glitch-subtitle"></p>
+
+                <!-- Buttons for CV and Contact -->
+                <div class="flex justify-center space-x-4 mb-8">
+                    <a href="https://drive.google.com/file/d/1ZTzCe7onqRMrBsFBvZxpun0AVAB8N0kQ/view?usp=sharing" class="btn-primary">
+                        <i class="fas fa-download mr-2"></i>Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section min-h-screen flex items-center justify-center py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center glitch" data-text="Skills">Skills</h2>
+                <div id="skills-container" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
+            </div>
+        </section>
+
+        <section id="experience" class="section min-h-screen flex items-center justify-center py-16 bg-gradient-to-b from-gray-900 to-black">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center glitch" data-text="Experience">Experience</h2>
+                <div id="experience-container" class="space-y-8"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="section min-h-screen flex items-center justify-center py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center glitch" data-text="Projects">Projects</h2>
+                <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            </div>
+        </section>
+
+        <section id="awards" class="section min-h-screen flex items-center justify-center py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center glitch" data-text="Awards">Awards</h2>
+                <div id="awards-container" class="space-y-8"></div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section min-h-screen flex items-center justify-center py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center glitch" data-text="Certifications">Certifications</h2>
+                <div id="certifications-container" class="space-y-8"></div>
+            </div>
+        </section>
+
+        <section id="publications" class="section min-h-screen flex items-center justify-center py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center glitch" data-text="Publications">Publications</h2>
+                <div id="publications-container" class="space-y-8"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 Sri Ganesh Arjula. All rights not reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
