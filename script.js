@@ -64,7 +64,7 @@ const resumeData = {
             "title": "Carpooling Web-App Using FastAPI (Beta Version)",
             "description": "Developed a carpooling web app using FastAPI with real-time notifications via WebSockets for ride updates. Designed a responsive front-end with HTML, CSS, JavaScript, and Bootstrap. Ensured seamless communication between passengers and drivers. Future plans include integrating machine learning for optimized route matching. Tools: Python, FastAPI, WebSockets, Google Places API, GitLab CI/CD.",
             "technologies": ["Python", "JavaScript","HTML", "CSS", "FastAPI", "WebSockets", "Bootstrap", "Google Places API"],
-            "website": "https://seahorse-app-8ejs9.ondigitalocean.app/"
+            "website": "https://one-stop-x4ep.onrender.com/",
         },
         {
             "title": "Telecommunicatiopns Alarm Forcasting",
